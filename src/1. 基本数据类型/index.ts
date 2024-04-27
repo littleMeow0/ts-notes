@@ -4,32 +4,35 @@
  * 3. object 和 function 其实并不属于基础数据类型，因为直接写的话并不能给它约束（根据场景选择）
  */
 
-let a:number = 1
-console.log(a)
+namespace BaseType {
+    let a:number = 1
+    console.log(a)
 
-let b:string = '1'
-console.log(b)
- 
-let c:boolean = true
-console.log(c)
+    let b:string = '1'
+    console.log(b)
+    
+    let c:boolean = true
+    console.log(c)
 
-// let d:object = {
-//     name: '小韩'
-// }
-// console.log(d)
+    // let d:object = {
+    //     name: '小韩'
+    // }
+    // console.log(d)
 
-let e:undefined
-console.log(e)
+    let e:undefined
+    console.log(e)
 
-let f:null = null
-console.log(f)
+    let f:null = null
+    console.log(f)
 
-let g:void = e
-g = f
-console.log(g)
+    let g:void = e
+    g = f
+    console.log(g)
 
-function fn():void {
-    console.log('我是一个函数')
+    function fn():void {
+        console.log('我是一个函数')
+    }
 }
+
 
 
