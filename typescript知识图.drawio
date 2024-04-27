@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Xi4wBaLZnPkPkWKMIxIv" name="第 1 页">
-        <mxGraphModel dx="1911" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1905" dy="787" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -79,22 +79,22 @@
                 <mxCell id="uhHu_FI5WDbJP-M0hhOY-31" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#7EA6E0;" parent="1" vertex="1">
                     <mxGeometry x="20" y="690" width="830" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="uhHu_FI5WDbJP-M0hhOY-32" value="tsconfig.js配置" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFB570;" parent="1" vertex="1">
+                <mxCell id="uhHu_FI5WDbJP-M0hhOY-32" value="tsconfig.js配置" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
                     <mxGeometry x="50" y="700" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="uhHu_FI5WDbJP-M0hhOY-34" value="命名空间" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFB570;" parent="1" vertex="1">
+                <mxCell id="uhHu_FI5WDbJP-M0hhOY-34" value="命名空间" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
                     <mxGeometry x="180" y="700" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="uhHu_FI5WDbJP-M0hhOY-36" value="声明文件.d.ts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFB570;" parent="1" vertex="1">
+                <mxCell id="uhHu_FI5WDbJP-M0hhOY-36" value="声明文件.d.ts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
                     <mxGeometry x="310" y="700" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="uhHu_FI5WDbJP-M0hhOY-37" value="装饰器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFB570;" parent="1" vertex="1">
+                <mxCell id="uhHu_FI5WDbJP-M0hhOY-37" value="装饰器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
                     <mxGeometry x="440" y="700" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="uhHu_FI5WDbJP-M0hhOY-38" value="混入" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFB570;" parent="1" vertex="1">
+                <mxCell id="uhHu_FI5WDbJP-M0hhOY-38" value="混入" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
                     <mxGeometry x="570" y="700" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="uhHu_FI5WDbJP-M0hhOY-39" value="vue3+ts工程化构建" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFB570;" parent="1" vertex="1">
+                <mxCell id="uhHu_FI5WDbJP-M0hhOY-39" value="vue3+ts工程化构建" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
                     <mxGeometry x="700" y="700" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="uhHu_FI5WDbJP-M0hhOY-40" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
