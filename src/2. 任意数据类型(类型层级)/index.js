@@ -2,7 +2,7 @@ var AnyType;
 (function (AnyType) {
     /**
      * 1. any,unknown 属于顶级类型，使用它们做变量类型可以为变量的值赋任何类型的值（关掉限制）
-     * 2. Object 属于第二级别，js中我们使用的所有数据类型和函数本质上来说都是一个Object，Object包含所有的数据类型了
+     * 2. Object 属于第二级别，js中我们使用的所有数据类型和函数本质上来说都是一个Object，Object包含所有的数据类型了(不包含null undefined)
      * 3. Number String Boolean 可以使用日常的方式进行直接赋值，也可以用new Number()
      * 4. number string boolean 可以使用日常的方式进行直接赋值
      * 5. 做类型声明，可以直接使用值   例如：1 ‘2’ false
@@ -45,8 +45,8 @@ var AnyType;
     c = function () {
     };
     c = new Date();
-    c = null;
-    c = undefined;
+    // c = null
+    // c = undefined
     c = new Object({
         name: 'c'
     });
