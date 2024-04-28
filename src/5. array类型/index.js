@@ -27,7 +27,7 @@ var ArrayType;
     function fn1(...args) {
         console.log('剩余参数', args);
         let argu = arguments;
-        console.log('arguments', argu);
+        console.log('arguments', argu, ...args);
     }
     fn1(1, 2, 3);
     let a = {

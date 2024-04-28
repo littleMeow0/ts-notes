@@ -2,7 +2,8 @@ namespace FnExtend{
 
     /**
      * 1. 对函数进行约束，一般是对传参的参数类型和函数返回值进行约束
-     * 2. 函数重载，根据不同的传参执行相应的代码 （类似于后台对某个table数据的增删改查，名字一致，传参不同而已）查看代码时也更清晰
+     * 2. 函数重载，根据不同的传参执行相应的代码 (想象这样一个场景，假设我有一个函数，里面实现了好几个功能，每个功能它都有自己的传参和结果，有它自己的意义) 
+     *                                         那么使用重载规定每个功能的传参和返回值，实现的时候分开去写，很能体现每个功能的意义，ts检查也会很好，自己读代码也很清晰
      */
 
 
@@ -59,10 +60,34 @@ namespace FnExtend{
     /**
      * 我们需要针对arr写几个函数
      * 1. 查询某个参数是否存在
-     * 2. 新增一个参数
-     * 3. 删除一个参数
-     * 4. 查询所有
+     * 2. 新增参数
+     * 3. 查询所有
      */
+
+    // 1. 定义函数结构
+    function arrFn(id:number):number[]
+    function arrFn():number[]
+    function arrFn(add:number[]):number[]
+
+    // 2. 函数实现
+    function arrFn(value?:number | number[]):number[] {
+        console.log('arrFn', typeof value)   // typeof 类型
+        if (typeof value === 'undefined') { // 查询所有
+            return arr
+        }
+        if (typeof value === 'number') { // 查询单个
+            return arr.filter((item)=>value==item)
+        }
+        if (typeof value === 'object') { // 新增
+            return arr.concat(value)
+        } 
+    }
+
+    console.log(arrFn())
+    console.log(arrFn(1))
+    console.log(arrFn([1]))
+
+
 
     
 

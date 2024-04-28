@@ -44,7 +44,7 @@ namespace ArrayType{
     function fn1(...args:any):void{
         console.log('剩余参数', args)
         let argu:IArguments = arguments
-        console.log('arguments', argu)
+        console.log('arguments', argu, ...args)
     }
 
     fn1(1,2,3)
