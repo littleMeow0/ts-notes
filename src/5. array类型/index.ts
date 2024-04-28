@@ -53,10 +53,19 @@ namespace ArrayType{
 
     // IArguments类型原理实现
     interface IArgu {
-        [propName:string]:any,
+        [index:number]:any,
         length: number,
         callee():void,
-        // Symbol(Symbol.iterator):
     }
+
+    let a:IArgu = {
+        '0': 1,
+        length: 1,
+        callee(){
+
+        },
+    }
+
+    // Array.from() 可以将类数组转化为数组
 
 }

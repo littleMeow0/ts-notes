@@ -35,6 +35,12 @@ namespace BaseType {
         console.log('我是一个函数')
     }
 
+
+    let h:Function = ()=>{
+
+    }
+    console.log(h)
+
     
 }
 

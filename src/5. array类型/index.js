@@ -30,4 +30,11 @@ var ArrayType;
         console.log('arguments', argu);
     }
     fn1(1, 2, 3);
+    let a = {
+        '0': 1,
+        length: 1,
+        callee() {
+        },
+    };
+    // Array.from() 可以将类数组转化为数组
 })(ArrayType || (ArrayType = {}));

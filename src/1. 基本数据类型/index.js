@@ -25,4 +25,7 @@ var BaseType;
     function fn() {
         console.log('我是一个函数');
     }
+    let h = () => {
+    };
+    console.log(h);
 })(BaseType || (BaseType = {}));
