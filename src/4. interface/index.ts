@@ -2,9 +2,10 @@ namespace Interface{
 
 
     /**
-     * 1. interface 接口，主要用于约束对象（对象属性和方法）
+     * 1. interface 接口，主要用于约束对象结构（对象属性和方法）
      * 2. 重名的两个 interface 接口，会自动合并
-     * 3. interface 接口，也可以用于定义一个函数
+     * 3. extends 继承，也会自动合并
+     * 4. interface 接口，也可以用于定义一个函数
      */
 
     interface Fn{
@@ -71,6 +72,32 @@ namespace Interface{
     f1()
 
 
+
+    interface Person extends User{
+        likecolor: string
+    }
+
+
+    let p1:Person = {
+        likecolor: 'red',
+        name: '小韩',
+        age: 22,
+        // sex: 1
+        height: 158,
+        cb(){
+            console.log('我是一个方法')
+        },
+        say(this:User){
+            console.log('我的名字叫', this.name)
+        },
+        weight: 88,
+        a: 4, // 由于索引签名的存在，可以随便写啦（不会被强校验了）
+        xx: ()=>{
+            console.log('//')
+        }
+    }
+
+    console.log(p1)
 
 }
 
