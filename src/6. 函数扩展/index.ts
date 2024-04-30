@@ -55,7 +55,7 @@ namespace FnExtend{
     console.log('u1', fn(u1))
 
 
-    // 函数重载
+    // 函数重载  (可参考https://blog.csdn.net/w1099690237/article/details/134822663)
     let arr:number[] = [1, 2, 3, 4, 2]
     /**
      * 我们需要针对arr写几个函数

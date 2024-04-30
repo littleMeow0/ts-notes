@@ -30,7 +30,7 @@ var FnExtend;
         age: 22
     };
     console.log('u1', fn(u1));
-    // 函数重载
+    // 函数重载  (可参考https://blog.csdn.net/w1099690237/article/details/134822663)
     let arr = [1, 2, 3, 4, 2];
     // 2. 函数实现
     function arrFn(value) {

@@ -34,7 +34,45 @@ namespace typeClass{
 
 
     // 类型断言 （如果你确定某个变量的类型，可直接断言成自己想要的，ts便不会在自行推断了）
+
+    let fn1 = (num:string|number):void => {
+        console.log((num as string).indexOf('1'))   // 错误用法，目前只是将num断言为string类型，但它本身还是一个数值，请合理使用类型断言（不要把类型和实际应用的方法矛盾）   fn1(12)
+        console.log((num as string).length)
+    } 
+    // fn1(12)
+    fn1('12')
+
+
+    interface A{
+        run: string
+    }
+    interface B{
+        build: string
+    }
+    let fn2 = (type: A|B):void => {
+        console.log((type as A).run)   // 断言为某种类型，其实就有它相对应的代码提示和用法啦，会更方便
+    }
+    fn2({
+        build: '888'
+    })
+
+
+    type H = "a" | "b" | "c"
+    let str: H = "a"
+    let str1 = "a"
+    str = str1 as H
+    console.log(str)
+
+
+
+
+
+
+
+    // (window as any).abc = 123   // 如果直接为window添加属性是加不上的，加上类型断言让它有相应的方法，就可以啦
+
     
+
 
 
 
