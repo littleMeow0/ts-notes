@@ -1,12 +1,12 @@
-var modifier;
-(function (modifier) {
-    //  当前编译出来的js有问题，请查看配置
+var Modifier;
+(function (Modifier) {
+    // ts 可以看出代码和编译都有错误提示，但是编译出来的js可以正常运行，但是不符合正常代码的逻辑，所以在git提交代码时应该做限制
     /**
      * class 修饰符
      * 1. public  --默认
      * 2. private  --私有属性，只能在类中访问
      * 3. protected  --类中和继承的子类中访问
-     * 4. static  --静态属性、方法 (不可this，只能使用类去调用)  不会被子类继承
+     * 4. static  --静态属性、方法 【 --不可this，只能使用类去调用  --不会被子类继承  --static可以被static调用】
      */
     class Person {
         constructor(name, age) {
@@ -36,4 +36,4 @@ var modifier;
     console.log(xiaohan.some);
     console.log(Person.nb);
     console.log(Person.run());
-})(modifier || (modifier = {}));
+})(Modifier || (Modifier = {}));
