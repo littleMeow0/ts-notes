@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代码雨</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        canvas{
+            /* border: 1px solid black; */
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="canvas"></canvas>
+
+
+    <script>
+        let canvas = document.getElementById('canvas')
+        if (canvas.getContext) { // 检查浏览器是否支持 canvas 绘画
+            let ctx = canvas.getContext('2d')
+            console.log(ctx)
+
+            canvas.height = window.screen.availHeight
+            canvas.width = window.screen.availWidth
+
+            // ctx.fillStyle = "#FD0";
+            // ctx.fillRect(0, 0, 75, 75);    // 绘制一个填充的矩形（x, y, width, height）
+            // ctx.fillStyle = "#6C0";
+            // ctx.fillRect(75, 0, 75, 75);
+            // ctx.fillStyle = "#09F";
+            // ctx.fillRect(0, 75, 75, 75);
+            // ctx.fillStyle = "#F30";
+            // ctx.fillRect(75, 75, 75, 75);
+            
+            let str = 'XMZSWSSBXMZSWSSBXMZSWSSBXMZSWSSBXMZSWSSB'.split('')  // 内容
+            let arr = Array(Math.ceil(canvas.width / 10)).fill(0) // 位置
+
+            // ctx.fillStyle = 'rgba(0,0,0,0.05)'//填充背景颜色
+            // ctx.fillRect(0, 0, canvas.width, canvas.height)//背景
+            // ctx.fillText(str[ Math.floor(Math.random() * str.length) ], 0, 0)
+
+            // console.log(str)
+            // console.log(arr)
+
+            const rain = () => {
+            ctx.fillStyle = 'rgba(0,0,0,0.05)'//填充背景颜色
+            ctx.fillRect(0, 0, canvas.width, canvas.height)//背景
+            ctx.fillStyle = "#0f0"; //文字颜色
+            arr.forEach((item, index) => {
+                ctx.fillText(str[ Math.floor(Math.random() * str.length) ], index * 10, item + 10)
+                arr[index] = item >= canvas.height || item > 10000 *  Math.random() ? 0 : item + 10; //添加随机数让字符随机出现不至于那么平整
+            })
+            console.log(arr);
+            
+        }
+        setInterval(rain, 40)
+
+
+
+            // ctx.fillStyle = 'rgba(0,0,0,1)'
+            // ctx.fillRect(0, 0, canvas.width, canvas.height)
+            // ctx.fillText(str, 0 , 0)
+            // ctx.fillStyle = "#0f0"; //文字颜色
+
+
+
+
+            // 怎么绘制出一个代码雨的效果呢？ 先绘制一行
+
+
+
+
+        // console.log(window.screen)
+        }
+    </script>
+</body>
+</html>
